@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  variants: {
+    extend: {
+      backgroundColor: ["active"],
+    },
+  },
   theme: {
     extend: {
       colors: {
@@ -14,6 +19,7 @@ module.exports = {
         silver: "#ecebff",
         "bubble-gum": "#ff77e9",
         bermuda: "#78dcca",
+        green: "#028a0F",
       },
     },
   },
