@@ -14,10 +14,10 @@ function TopNavbar() {
 
   return (
     <div className="shadow-md w-full fixed">
-      <div className="flex justify-between items-center justify-center bg-white md:px-5 px-2 md:h-14 h-12 border-2 border-black">
+      <div className="flex justify-between items-center justify-center bg-white md:px-5 px-2 md:h-14 h-12">
         <div
           className="font-bold md:text-2xl text-xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800 border-2 border-black"
+      text-gray-800"
         >
           <span className="md:text-3xl text-xl text-indigo-600 mr-1 pt-2">
             <ion-icon name="logo-ionic"></ion-icon>
@@ -27,20 +27,20 @@ function TopNavbar() {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-xl absolute right-3 top-2 cursor-pointer md:hidden border-2 border-black"
+          className="text-xl absolute right-3 top-2 cursor-pointer md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
 
         <ul
           className={`md:flex md:items-center md:pb-0 pb-2 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-6 transition-all duration-500 ease-in ${
-            open ? "top-10 " : "top-[-400px] border-2 border-black"
+            open ? "top-10 " : "top-[-400px]"
           }`}
         >
           {Links.map((link) => (
             <li
               key={link.name}
-              className="md:ml-4 font-medium md:my-0 my-7 py-1 border-2 border-black"
+              className="md:ml-4 font-medium md:my-0 my-7 py-1"
             >
               <Link
                 to={link.link}
