@@ -15,6 +15,7 @@ function App() {
       <TopNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/react_practice" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Blogs" element={<Blogs />} />
